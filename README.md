@@ -33,7 +33,7 @@ EOF
 ```
 
 The KMS key is needed for encryption using sops.
-Create the key first according to the README in the /terraform directory.
+Create the key first according to the [./terraform/README.md](https://github.com/hrfmmr/google-calendar-remind-scheduler-example/blob/main/terraform/README.md).
 
 Configure SOPS_KMS_ARN value in `.envrc`(Ensure direnv is installed in your environment)
 
