@@ -1,7 +1,7 @@
 module "terraform_state_backend" {
   source     = "cloudposse/tfstate-backend/aws"
   version    = "1.1.1"
-  namespace  = local.service_id
+  namespace  = "${local.service_id}.${local.s3_domain}"
   stage      = "prod"
   name       = "terraform"
   attributes = ["state"]
